@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let str = prompt("Nhập vào chuỗi");
+		if(is_usZipCode(str)){
+			alert("Là mã nước mỹ");
+		}else{
+			alert("Không Là mã nước mỹ");
+		}
+		function is_usZipCode(str){
+			let regexp = /^[0-9]{5}-[0-9]{4}$/;
+			if(regexp.test(str)){
+				return true;
+			}else{
+				return false;
+			}
+		}
+	</script>
+</body>
+</html>
